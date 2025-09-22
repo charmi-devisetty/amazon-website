@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cart - My E-commerce Store</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#f4f4f4;color:#333;}
+header{background:#2c3e50;color:#fff;padding:20px;text-align:center;}
+nav a{color:#fff;text-decoration:none;margin:0 15px;font-weight:bold;transition:color .3s;}
+nav a:hover{color:#f39c12;}
+.container{max-width:1200px;margin:30px auto;padding:0 20px;}
+.cart-table{width:100%;border-collapse:collapse;margin-top:20px;}
+.cart-table th,.cart-table td{padding:12px;text-align:center;border-bottom:1px solid #ccc;}
+.cart-summary{text-align:right;margin-top:20px;font-size:1.2em;}
+button{background:#f39c12;border:none;color:white;padding:10px 20px;margin-top:10px;
+       cursor:pointer;border-radius:5px;font-weight:bold;transition: background 0.3s;}
+button:hover{background:#d35400;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Your Shopping Cart</h1>
+  <nav>
+    <!-- Navigation redirects -->
+    <a href="index.html">Home</a>
+    <a href="category.html">Products</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<div class="container">
+  <table class="cart-table">
+    <tr>
+      <th>Product</th><th>Price</th><th>Quantity</th><th>Total</th>
+    </tr>
+    <tr>
+      <td>Product 1</td><td>₹999</td><td>1</td><td>₹999</td>
+    </tr>
+  </table>
+
+  <div class="cart-summary">
+    <p><strong>Grand Total: ₹999</strong></p>
+    <!-- Button redirect example -->
+    <button onclick="window.location.href='index.html'">Continue Shopping</button>
+  </div>
+</div>
+
+</body>
+</html>
